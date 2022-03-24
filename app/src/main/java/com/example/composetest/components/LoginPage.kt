@@ -1,7 +1,8 @@
 package com.example.composetest.components
 
+import android.content.res.Configuration
 import androidx.compose.foundation.*
-import androidx.compose.foundation.layout.*
+import androidx.compose.foundation.layout.* // ktlint-disable no-wildcard-imports
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.*
 import androidx.compose.runtime.Composable
@@ -24,7 +25,11 @@ import com.example.composetest.ui.theme.GoldColor
 import com.example.composetest.ui.theme.PrimaryColor
 import com.example.composetest.ui.theme.WhiteBackground
 
-@Preview
+@Preview(
+    uiMode = Configuration.UI_MODE_NIGHT_YES,
+    showBackground = true,
+    name = "Dark Mode"
+)
 @Composable
 fun LoginPage() {
 
